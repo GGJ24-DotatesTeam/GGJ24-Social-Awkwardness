@@ -33,6 +33,7 @@ public class PlayerTopicListener: MonoBehaviour
             if (huddle.timeSpentByPlayerLearningTopic >= topicLearningTime)
             {
                 huddle.isTopicKnownToPlayer = true;
+                huddle.UpdateTopicIcon();
             }
         }else if(other.TryGetComponent<SingleStander>(out var singleStander))
         {
@@ -45,6 +46,7 @@ public class PlayerTopicListener: MonoBehaviour
             if (singleStander.timeSpentByPlayerLearningTopic >= topicLearningTime)
             {
                 singleStander.isTopicKnownToPlayer = true;
+                singleStander.UpdateTopicIcon();
             }
         }
     }

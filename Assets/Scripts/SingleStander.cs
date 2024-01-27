@@ -14,11 +14,13 @@ public class SingleStander : MonoBehaviour
     public float timeSpentByPlayerLearningTopic = 0f;
     
     private ProgressBar _progressBar;
+    private TopicIcon _topicIcon;
     private PlayerTopicListener _playerTopicListener;
     
     private void Awake()
     {
         _progressBar = GetComponentInChildren<ProgressBar>();
+        _topicIcon = GetComponentInChildren<TopicIcon>();
         _playerTopicListener = GameObject.Find("/Player/PlayerTopicListener").GetComponent<PlayerTopicListener>();
     }
     
@@ -38,6 +40,11 @@ public class SingleStander : MonoBehaviour
         {
             _progressBar.SetProgress(timeSpentByPlayerLearningTopic / _playerTopicListener.topicLearningTime);
         }
+    }
+    
+    public void UpdateTopicIcon()
+    {
+        _topicIcon.SetTopic(knownTopic);
     }
     
     private void OnTriggerEnter(Collider other)
