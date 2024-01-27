@@ -433,7 +433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3436593624890735590, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.8
       objectReference: {fileID: 0}
     - target: {fileID: 3436593624890735590, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -480,10 +480,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1314049620336877448, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
     - target: {fileID: 2887908448768797421, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: m_Name
       value: Huddle
@@ -527,14 +523,6 @@ PrefabInstance:
     - target: {fileID: 4396859729693780995, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6167869644792096477, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 7842450488445657425, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
-      propertyPath: m_Constraints
-      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -592,10 +580,6 @@ PrefabInstance:
     - target: {fileID: 3198034106013452782, guid: e02a0091141554c559a63a0477f610fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4382938646215002088, guid: e02a0091141554c559a63a0477f610fe, type: 3}
-      propertyPath: knownTopic
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
