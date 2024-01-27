@@ -9,11 +9,17 @@ public class Huddle : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Huddle: OnTriggerEnter");
+        if(other.TryGetComponent<PlayerJoker>(out var playerJoker))
+        {
+            playerJoker.joinedHuddle = this;
+        }
     }
     
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Huddle: OnTriggerExit");
+        if(other.TryGetComponent<PlayerJoker>(out var playerJoker))
+        {
+            playerJoker.joinedHuddle = null;
+        }
     }
 }

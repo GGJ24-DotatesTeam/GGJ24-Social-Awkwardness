@@ -463,6 +463,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: jokes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: jokes.Array.data[1].topic
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: jokes.Array.data[2].topic
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7755695541407544800, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -592,6 +604,10 @@ PrefabInstance:
     - target: {fileID: 3198034106013452782, guid: e02a0091141554c559a63a0477f610fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4382938646215002088, guid: e02a0091141554c559a63a0477f610fe, type: 3}
+      propertyPath: knownTopic
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

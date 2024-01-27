@@ -9,11 +9,17 @@ public class SingleStander : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("SingleStander: OnTriggerEnter");
+        if(other.TryGetComponent<PlayerJoker>(out var playerJoker))
+        {
+            playerJoker.joinedSingleStander = this;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("SingleStander: OnTriggerExit");
+        if(other.TryGetComponent<PlayerJoker>(out var playerJoker))
+        {
+            playerJoker.joinedSingleStander = null;
+        }
     }
 }
