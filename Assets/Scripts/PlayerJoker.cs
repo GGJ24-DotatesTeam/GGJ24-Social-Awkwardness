@@ -12,7 +12,6 @@ public class PlayerJoker : MonoBehaviour
     public List<Joke> jokes;
 
     public Huddle joinedHuddle = null;
-    public SingleStander joinedSingleStander = null;
     
     public float jokeLandingBaseChance = 0.4f;
     public float jokeLandingOnTopicExtraChance = 0.2f;
@@ -90,5 +89,11 @@ public class PlayerJoker : MonoBehaviour
         }
         
         _jokeInTopicCountDict[topic]--;
+    }
+    
+    public void AddJokeFromTopic(Topic topic)
+    {
+        jokes.Add(new Joke(topic));
+        _jokeInTopicCountDict[topic]++;
     }
 }

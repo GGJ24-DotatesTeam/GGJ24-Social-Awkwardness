@@ -2,24 +2,41 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SingleStander : MonoBehaviour
 {
     public Topic knownTopic;
+    public float jokeTeachingCooldown = 5f;
+    private float _timeSinceLastJokeTeaching = 0f;
+    public bool isInCooldown = false;
+    
+    void Update()
+    {
+        if(isInCooldown)
+        {
+            _timeSinceLastJokeTeaching += Time.deltaTime;
+            if(_timeSinceLastJokeTeaching >= jokeTeachingCooldown)
+            {
+                _timeSinceLastJokeTeaching = 0f;
+                isInCooldown = false;
+            }
+        }
+    }
     
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent<PlayerJoker>(out var playerJoker))
+        if(other.TryGetComponent<PlayerJokeLearner>(out var playerJokeLearner))
         {
-            playerJoker.joinedSingleStander = this;
+            playerJokeLearner.joinedSingleStander = this;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.TryGetComponent<PlayerJoker>(out var playerJoker))
+        if(other.TryGetComponent<PlayerJokeLearner>(out var playerJokeLearner))
         {
-            playerJoker.joinedSingleStander = null;
+            playerJokeLearner.joinedSingleStander = this;
         }
     }
 }
