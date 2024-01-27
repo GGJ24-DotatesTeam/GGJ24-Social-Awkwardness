@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Huddle : MonoBehaviour
 {
+    public Topic conversationTopic;
+    
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Huddle: OnTriggerEnter");
