@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 8262af0c69085fb43aa5d2ccdddd6e85
+guid: 6f8d70494e3f8fb4e8d8ce01b586ea0b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GradientPallette
+    second: {fileID: 2100000, guid: d25fc249583d9c34ba7365b4f77450a0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
