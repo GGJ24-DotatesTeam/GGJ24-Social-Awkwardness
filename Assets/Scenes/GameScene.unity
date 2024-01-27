@@ -463,18 +463,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
-      propertyPath: jokes.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
-      propertyPath: jokes.Array.data[1].topic
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
-      propertyPath: jokes.Array.data[2].topic
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7755695541407544800, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: m_Name
       value: Player

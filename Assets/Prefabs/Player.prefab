@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6088105349482404724}
   - component: {fileID: 6103630326261735270}
   - component: {fileID: 8298251830411276112}
+  - component: {fileID: 4983383925817581454}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -149,10 +150,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c5b7fdf7387849cdb47027f0723cca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jokes:
-  - topic: 0
+  jokes:
   - topic: 0
   - topic: 2
+  joinedHuddle: {fileID: 0}
+  jokeLandingBaseChance: 0.4
+  jokeLandingOnTopicExtraChance: 0.2
 --- !u!114 &8298251830411276112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,3 +169,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &4983383925817581454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7755695541407544800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7b7705337d3429da6e7c2f90d62c46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joinedSingleStander: {fileID: 0}
+  jokeLearningTime: 3
