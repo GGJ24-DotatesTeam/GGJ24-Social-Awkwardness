@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2079752773129952737}
   - component: {fileID: 6024491468968806427}
+  - component: {fileID: 5279592216098351898}
   m_Layer: 0
-  m_Name: Mesh
+  m_Name: PlayerTopicListener
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,6 +54,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5279592216098351898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3395340749543330312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276f66c155434a2083965615272f05a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topicLearningTime: 5
+  radius: 5
 --- !u!1 &7755695541407544800
 GameObject:
   m_ObjectHideFlags: 0
