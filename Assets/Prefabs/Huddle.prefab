@@ -133,7 +133,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2887908448768797421
 GameObject:
@@ -183,6 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cb3bedaea92d4ee99007e5755b0c7f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conversationTopic: 0
+  isTopicKnownToPlayer: 0
+  timeSpentByPlayerLearningTopic: 0
 --- !u!135 &4434019684984021853
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -337,7 +340,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &6661369786902370342
 GameObject:
@@ -472,5 +475,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0

@@ -46,6 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885b305e18e1b4a6fbdaeb0f7a62a83a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTopicKnownToPlayer: 0
+  knownTopic: 2
+  jokeTeachingCooldown: 5
+  isInCooldown: 0
 --- !u!135 &2834692500882221368
 SphereCollider:
   m_ObjectHideFlags: 0

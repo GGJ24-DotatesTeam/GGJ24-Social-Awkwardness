@@ -6,10 +6,12 @@ using UnityEngine.Serialization;
 
 public class SingleStander : MonoBehaviour
 {
+    public bool isTopicKnownToPlayer = false;
     public Topic knownTopic;
     public float jokeTeachingCooldown = 5f;
     private float _timeSinceLastJokeTeaching = 0f;
     public bool isInCooldown = false;
+    public float timeSpentByPlayerLearningTopic = 0f;
     
     void Update()
     {

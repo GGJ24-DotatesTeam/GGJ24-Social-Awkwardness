@@ -1,11 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Huddle : MonoBehaviour
 {
     public Topic conversationTopic;
+    public bool isTopicKnownToPlayer = false;
+    public float timeSpentByPlayerLearningTopic = 0f;
     
     private void OnTriggerEnter(Collider other)
     {
