@@ -480,6 +480,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 376632872218903981, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376632872218903981, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376632872218903981, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376632872218903981, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2887908448768797421, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: m_Name
       value: Huddle

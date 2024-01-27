@@ -13,6 +13,15 @@ public class SingleStander : MonoBehaviour
     public bool isInCooldown = false;
     public float timeSpentByPlayerLearningTopic = 0f;
     
+    private ProgressBar _progressBar;
+    private PlayerTopicListener _playerTopicListener;
+    
+    private void Awake()
+    {
+        _progressBar = GetComponentInChildren<ProgressBar>();
+        _playerTopicListener = GameObject.Find("/Player/PlayerTopicListener").GetComponent<PlayerTopicListener>();
+    }
+    
     void Update()
     {
         if(isInCooldown)
@@ -23,6 +32,11 @@ public class SingleStander : MonoBehaviour
                 _timeSinceLastJokeTeaching = 0f;
                 isInCooldown = false;
             }
+        }
+        
+        if (!isTopicKnownToPlayer)
+        {
+            _progressBar.SetProgress(timeSpentByPlayerLearningTopic / _playerTopicListener.topicLearningTime);
         }
     }
     
