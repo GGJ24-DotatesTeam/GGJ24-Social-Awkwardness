@@ -890,7 +890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: topic
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: _playerJoker
@@ -2979,7 +2979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: topic
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: _playerJoker
@@ -5928,7 +5928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: topic
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: _playerJoker
@@ -6172,7 +6172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: topic
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: _playerJoker
@@ -6808,6 +6808,14 @@ PrefabInstance:
       propertyPath: _jokeTellingClip
       value: 
       objectReference: {fileID: 8300000, guid: e0c8935a698c145099f52bb9a1bba96c, type: 3}
+    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: jokes.Array.data[0].topic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: jokes.Array.data[1].topic
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6607934651910234648, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: _winPanel
       value: 
@@ -6927,6 +6935,10 @@ PrefabInstance:
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
+      propertyPath: topic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6257411547620657232, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: _playerJoker
