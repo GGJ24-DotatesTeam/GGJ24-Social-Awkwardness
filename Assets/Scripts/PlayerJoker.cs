@@ -16,7 +16,7 @@ public class PlayerJoker : MonoBehaviour
     public float jokeLandingOnTopicExtraChance = 0.2f;
     
     Dictionary<Topic,float> _topicExtraLandingChanceDict = new Dictionary<Topic, float>();
-    Dictionary<Topic, int> _jokeInTopicCountDict = new Dictionary<Topic, int>();
+    public Dictionary<Topic, int> JokeInTopicCountDict = new Dictionary<Topic, int>();
     
     private PlayerAnxietyController _playerAnxietyController;
     
@@ -32,11 +32,11 @@ public class PlayerJoker : MonoBehaviour
         // Initialize the dictionary of joke in topic counts with 0.0f
         foreach(Topic topic in Enum.GetValues(typeof(Topic)))
         {
-            _jokeInTopicCountDict.Add(topic, 0);
+            JokeInTopicCountDict.Add(topic, 0);
         }
         foreach (Joke joke in jokes)
         {
-            _jokeInTopicCountDict[joke.topic]++;
+            JokeInTopicCountDict[joke.topic]++;
         }
     }
     
@@ -53,10 +53,9 @@ public class PlayerJoker : MonoBehaviour
         return UnityEngine.Random.value < chance;
     }
     
-    [Button]
     public void TellJoke(Topic topic)
     {
-        if(_jokeInTopicCountDict[topic] == 0)
+        if(JokeInTopicCountDict[topic] == 0)
         {
             Debug.Log($"No jokes in topic {topic}");
             return;
@@ -68,6 +67,7 @@ public class PlayerJoker : MonoBehaviour
             return;
         }
         
+        JokeInTopicCountDict[topic]--;
         RemoveJokeFromTopic(topic);
         if(TryJokeLanding(topic, joinedHuddle.conversationTopic))
         {
@@ -91,13 +91,11 @@ public class PlayerJoker : MonoBehaviour
                 return;
             }
         }
-        
-        _jokeInTopicCountDict[topic]--;
     }
     
     public void AddJokeFromTopic(Topic topic)
     {
         jokes.Add(new Joke(topic));
-        _jokeInTopicCountDict[topic]++;
+        JokeInTopicCountDict[topic]++;
     }
 }
