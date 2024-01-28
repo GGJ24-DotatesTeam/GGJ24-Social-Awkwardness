@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 6103630326261735270}
   - component: {fileID: 8298251830411276112}
   - component: {fileID: 4983383925817581454}
+  - component: {fileID: 6607934651910234648}
   - component: {fileID: 8670630379349049348}
   - component: {fileID: 8856426446477167258}
   m_Layer: 0
@@ -151,6 +152,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joinedSingleStander: {fileID: 0}
   jokeLearningTime: 3
+--- !u!114 &6607934651910234648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7755695541407544800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e37d3c5cac14f03926d371d14cd156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anxietyBar: {fileID: 0}
+  currentAnxiety: 50
+  passiveAnxietyIncreaseRate: 0.01
+  failedJokeAnxietyIncrease: 10
+  successfulJokeAnxietyDecrease: 20
 --- !u!136 &8670630379349049348
 CapsuleCollider:
   m_ObjectHideFlags: 0

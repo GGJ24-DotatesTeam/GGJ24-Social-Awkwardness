@@ -12,7 +12,16 @@ public class PlayerAnxietyController : MonoBehaviour
     public float passiveAnxietyIncreaseRate = 1f;
     public float failedJokeAnxietyIncrease = 10f;
     public float successfulJokeAnxietyDecrease = 20f;
-    
+
+    [SerializeField] private GameObject _winPanel;
+    [SerializeField] private GameObject _losePanel;
+
+    private void Awake()
+    {
+        _winPanel.SetActive(false);
+        _losePanel.SetActive(false);
+    }
+
     public void IncreaseAnxiety()
     {
         currentAnxiety += failedJokeAnxietyIncrease;
@@ -27,5 +36,14 @@ public class PlayerAnxietyController : MonoBehaviour
     {
         currentAnxiety += passiveAnxietyIncreaseRate * Time.deltaTime;
         _anxietyBar.SetProgress(currentAnxiety / 100f);
+        
+        if(currentAnxiety >= 100f)
+        {
+            _losePanel.SetActive(true);
+        }
+        else if(currentAnxiety <= 0f)
+        {
+            _winPanel.SetActive(true);
+        }
     }
 }
