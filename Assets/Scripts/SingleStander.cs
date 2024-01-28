@@ -22,7 +22,6 @@ public class SingleStander : MonoBehaviour
         _progressBar = GetComponentInChildren<ProgressBar>();
         _topicIcon = GetComponentInChildren<TopicIcon>();
         _playerTopicListener = GameObject.Find("/Player/PlayerTopicListener").GetComponent<PlayerTopicListener>();
-        UpdateTopicIcon();
     }
     
     void Update()
