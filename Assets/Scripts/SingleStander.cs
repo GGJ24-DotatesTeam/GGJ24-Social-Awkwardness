@@ -59,7 +59,7 @@ public class SingleStander : MonoBehaviour
     {
         if(other.TryGetComponent<PlayerJokeLearner>(out var playerJokeLearner))
         {
-            playerJokeLearner.joinedSingleStander = this;
+            playerJokeLearner.joinedSingleStander = null;
         }
     }
 }

@@ -82,3 +82,4 @@ crashlytics-build.properties
 
 # Files about Odin plugin demos
 /[Aa]ssets/Plugins/Sirenix/Demos/*
+/[Aa]ssets/Plugins/Sirenix/*

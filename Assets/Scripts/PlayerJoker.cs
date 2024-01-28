@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
-using Sirenix.OdinInspector.Editor;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -19,8 +18,11 @@ public class PlayerJoker : MonoBehaviour
     Dictionary<Topic,float> _topicExtraLandingChanceDict = new Dictionary<Topic, float>();
     Dictionary<Topic, int> _jokeInTopicCountDict = new Dictionary<Topic, int>();
     
+    private PlayerAnxietyController _playerAnxietyController;
+    
     private void Awake()
     {
+        _playerAnxietyController = GetComponent<PlayerAnxietyController>();
         // Initialize the dictionary of topic extra landing chances
         foreach(Topic topic in Enum.GetValues(typeof(Topic)))
         {
@@ -69,10 +71,12 @@ public class PlayerJoker : MonoBehaviour
         RemoveJokeFromTopic(topic);
         if(TryJokeLanding(topic, joinedHuddle.conversationTopic))
         {
+            _playerAnxietyController.DecreaseAnxiety();
             Debug.Log($"Joke landed");
         }
         else
         {
+            _playerAnxietyController.IncreaseAnxiety();
             Debug.Log($"Joke failed");
         }
     }
