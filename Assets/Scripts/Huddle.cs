@@ -53,10 +53,10 @@ public class Huddle : MonoBehaviour
     {
         _particleSystem.Play();
         
-        /*DOVirtual.DelayedCall(1f, () =>
+        DOVirtual.DelayedCall(1f, () =>
         {
             _particleSystem.Stop();
-        });*/
+        });
     }
     
     
