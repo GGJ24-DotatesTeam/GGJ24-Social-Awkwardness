@@ -870,11 +870,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 672
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -418.45728
+      value: -416
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2959,11 +2959,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -309
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -418.45728
+      value: -416
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5908,11 +5908,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 368
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -418.45728
+      value: -416
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6152,11 +6152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -418.45728
+      value: -416
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6521,7 +6521,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1549744270971785703, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: conversationTopic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2887908448768797421, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: m_Name
@@ -6788,6 +6788,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4983383925817581454, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: jokeLearningTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5279592216098351898, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: topicLearningTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: _animator
       value: 
@@ -6809,12 +6817,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: e0c8935a698c145099f52bb9a1bba96c, type: 3}
     - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: jokeLandingBaseChance
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: jokes.Array.data[0].topic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: jokes.Array.data[1].topic
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: jokeLandingOnTopicExtraChance
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6607934651910234648, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: _winPanel
@@ -6828,6 +6844,18 @@ PrefabInstance:
       propertyPath: _anxietyBar
       value: 
       objectReference: {fileID: 728809636}
+    - target: {fileID: 6607934651910234648, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: currentAnxiety
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607934651910234648, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: failedJokeAnxietyIncrease
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607934651910234648, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: passiveAnxietyIncreaseRate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7755695541407544800, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6882,11 +6910,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 221.0653
+      value: 65.0599
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 43.0854
+      value: 66.5358
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6918,11 +6946,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -630
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -418.45728
+      value: -416
       objectReference: {fileID: 0}
     - target: {fileID: 4375055777631368336, guid: ff34eb3a7f2104d279086bdc3d897eef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

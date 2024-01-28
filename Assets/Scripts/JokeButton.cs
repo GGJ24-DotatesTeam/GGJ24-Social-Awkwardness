@@ -16,9 +16,13 @@ public class JokeButton : MonoBehaviour
     
     [SerializeField]
     private Button _button;
+    
+    [SerializeField]
+    private TopicIcon _topicIcon;
 
     private void Start()
     {
+        _topicIcon.SetTopic(topic);
         UpdateText();
     }
 
@@ -26,13 +30,13 @@ public class JokeButton : MonoBehaviour
     {
         if (_playerJoker.JokeInTopicCountDict[topic] == 0)
         {
-            _buttonText.text = topic.ToString();
+            _buttonText.text = "";
             _button.interactable = false;
         }
         else
         {
             _button.interactable = true;
-            _buttonText.text = topic.ToString() + " x" +_playerJoker.JokeInTopicCountDict[topic].ToString();
+            _buttonText.text = "x" +_playerJoker.JokeInTopicCountDict[topic].ToString();
         }
     }
     

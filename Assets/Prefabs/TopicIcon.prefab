@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1430d90dc86c4f368b77e6ad8d6e1667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _questionMarkSprite: {fileID: 21300000, guid: 088fd279df8ec3b42bf4811a15347e02, type: 3}
+  _questionMarkSprite: {fileID: 21300000, guid: 4001383f298e3f1489ff382f689450f1, type: 3}
   _yellowTopicSprite: {fileID: 21300000, guid: 2e26374cae484ba48b77d08f110aa15d, type: 3}
   _blueTopicSprite: {fileID: 21300000, guid: 3535fa4d57f71fc419fe898ed7fb3c46, type: 3}
   _redTopicSprite: {fileID: 21300000, guid: 97643c1d7aaea4b45a5eea5853cc15d6, type: 3}
