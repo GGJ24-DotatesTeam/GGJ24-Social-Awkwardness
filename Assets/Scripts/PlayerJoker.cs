@@ -19,6 +19,7 @@ public class PlayerJoker : MonoBehaviour
     public Dictionary<Topic, int> JokeInTopicCountDict = new Dictionary<Topic, int>();
     
     private PlayerAnxietyController _playerAnxietyController;
+    [SerializeField] private Animator _animator;
     
     private void Awake()
     {
@@ -55,6 +56,7 @@ public class PlayerJoker : MonoBehaviour
     
     public void TellJoke(Topic topic)
     {
+        _animator.SetTrigger("tellingJoke");
         if(JokeInTopicCountDict[topic] == 0)
         {
             Debug.Log($"No jokes in topic {topic}");

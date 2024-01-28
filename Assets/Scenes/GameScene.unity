@@ -773,6 +773,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517013403}
   m_CullTransparentMesh: 1
+--- !u!95 &549400972 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1648804907515302423, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+  m_PrefabInstance: {fileID: 5026353799620218937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,13 +1118,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.51361614, y: 0, z: 0, w: 0.85802007}
-  m_LocalPosition: {x: -2.2760942, y: 17.13196, z: -15.0482025}
+  m_LocalRotation: {x: 0.45970473, y: -0, z: -0, w: 0.88807184}
+  m_LocalPosition: {x: -0.31, y: 20.89, z: -19.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 61.81, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 54.736, y: 0, z: 0}
 --- !u!1001 &1125273675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1331,7 +1336,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2204,7 +2209,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3436593624890735590, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.21
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3436593624890735590, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2212,7 +2217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3436593624890735590, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.8
+      value: -10.3
       objectReference: {fileID: 0}
     - target: {fileID: 3436593624890735590, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2242,6 +2247,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6103630326261735270, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 549400972}
     - target: {fileID: 6607934651910234648, guid: fe6d117d361db43479002d8b877234f7, type: 3}
       propertyPath: _winPanel
       value: 
@@ -2258,6 +2267,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8298251830411276112, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298251830411276112, guid: fe6d117d361db43479002d8b877234f7, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 549400972}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2416,6 +2433,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6213706285554194267, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6cbd68381fc7845cb8804f2d44f307fc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2429,6 +2450,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 127164584150015634, guid: e02a0091141554c559a63a0477f610fe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e9c029cef31b48ffbf11d08e9b20e1f, type: 2}
     - target: {fileID: 1147841326041127320, guid: e02a0091141554c559a63a0477f610fe, type: 3}
       propertyPath: m_Name
       value: SingleStander
