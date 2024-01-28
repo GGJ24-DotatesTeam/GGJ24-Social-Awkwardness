@@ -1,5 +1,6 @@
 public enum Topic
 {
+    None,
     Yellow,
     Blue,
     Red,

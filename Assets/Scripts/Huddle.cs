@@ -24,6 +24,7 @@ public class Huddle : MonoBehaviour
     
     private void Update()
     {
+        UpdateTopicIcon();
         if (!isTopicKnownToPlayer)
         {
             _progressBar.SetProgress(timeSpentByPlayerLearningTopic / _playerTopicListener.topicLearningTime);
@@ -32,7 +33,12 @@ public class Huddle : MonoBehaviour
 
     public void UpdateTopicIcon()
     {
-        _topicIcon.SetTopic(conversationTopic);
+        if(isTopicKnownToPlayer)
+            _topicIcon.SetTopic(conversationTopic);
+        else
+        {
+            _topicIcon.SetTopic(Topic.None);
+        }
     }
     
     private void OnTriggerEnter(Collider other)

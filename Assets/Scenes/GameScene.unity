@@ -1891,7 +1891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4382938646215002088, guid: e02a0091141554c559a63a0477f610fe, type: 3}
       propertyPath: knownTopic
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2837,7 +2837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6507825720072822428, guid: 832b6f007a9917f4c81ab47861ff7c50, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2639
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6507825720072822428, guid: 832b6f007a9917f4c81ab47861ff7c50, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3247,7 +3247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4382938646215002088, guid: e02a0091141554c559a63a0477f610fe, type: 3}
       propertyPath: knownTopic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3355,12 +3355,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1549744270971785703, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
+      propertyPath: conversationTopic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549744270971785703, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: isTopicKnownToPlayer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2887908448768797421, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: m_Name
       value: Huddle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124045749395896849, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4396859729693780995, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6513,7 +6521,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1549744270971785703, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: conversationTopic
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2887908448768797421, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: m_Name
@@ -6943,7 +6951,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1549744270971785703, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: conversationTopic
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2887908448768797421, guid: 64af52bc47f994ed5a858b8742a8c243, type: 3}
       propertyPath: m_Name

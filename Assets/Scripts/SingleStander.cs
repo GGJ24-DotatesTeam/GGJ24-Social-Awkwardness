@@ -22,10 +22,12 @@ public class SingleStander : MonoBehaviour
         _progressBar = GetComponentInChildren<ProgressBar>();
         _topicIcon = GetComponentInChildren<TopicIcon>();
         _playerTopicListener = GameObject.Find("/Player/PlayerTopicListener").GetComponent<PlayerTopicListener>();
+        UpdateTopicIcon();
     }
     
     void Update()
     {
+        UpdateTopicIcon();
         if(isInCooldown)
         {
             _timeSinceLastJokeTeaching += Time.deltaTime;
@@ -44,7 +46,12 @@ public class SingleStander : MonoBehaviour
     
     public void UpdateTopicIcon()
     {
-        _topicIcon.SetTopic(knownTopic);
+        if(isTopicKnownToPlayer)
+            _topicIcon.SetTopic(knownTopic);
+        else
+        {
+            _topicIcon.SetTopic(Topic.None);
+        }
     }
     
     private void OnTriggerEnter(Collider other)
