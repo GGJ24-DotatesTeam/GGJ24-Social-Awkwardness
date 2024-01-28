@@ -88,6 +88,7 @@ public class PlayerJoker : MonoBehaviour
             DOVirtual.DelayedCall(1f, () =>
             {
                 _audioSource.PlayOneShot(_jokeLandingClip);
+                joinedHuddle.PlayParticles();
             });
             
             Debug.Log($"Joke landed");

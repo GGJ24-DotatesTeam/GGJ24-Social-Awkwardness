@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 
 public class Huddle : MonoBehaviour
@@ -10,9 +11,12 @@ public class Huddle : MonoBehaviour
     private ProgressBar _progressBar;
     private TopicIcon _topicIcon;
     private PlayerTopicListener _playerTopicListener;
+    private ParticleSystem _particleSystem;
 
     private void Start()
     {
+        _particleSystem = GetComponent<ParticleSystem>();
+        _particleSystem.Stop();
         _topicIcon = GetComponentInChildren<TopicIcon>();
         _progressBar = GetComponentInChildren<ProgressBar>();
         _playerTopicListener = GameObject.Find("/Player/PlayerTopicListener").GetComponent<PlayerTopicListener>();
@@ -38,6 +42,17 @@ public class Huddle : MonoBehaviour
             playerJoker.joinedHuddle = this;
         }
     }
+    
+    public void PlayParticles()
+    {
+        _particleSystem.Play();
+        
+        /*DOVirtual.DelayedCall(1f, () =>
+        {
+            _particleSystem.Stop();
+        });*/
+    }
+    
     
     private void OnTriggerExit(Collider other)
     {
