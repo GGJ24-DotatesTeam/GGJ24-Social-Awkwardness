@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -20,6 +21,10 @@ public class PlayerJoker : MonoBehaviour
     
     private PlayerAnxietyController _playerAnxietyController;
     [SerializeField] private Animator _animator;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _jokeTellingClip;
+    [SerializeField] private AudioClip _jokeLandingClip;
+    [SerializeField] private AudioClip _jokeFailingClip;
     
     private void Awake()
     {
@@ -56,7 +61,6 @@ public class PlayerJoker : MonoBehaviour
     
     public void TellJoke(Topic topic)
     {
-        _animator.SetTrigger("tellingJoke");
         if(JokeInTopicCountDict[topic] == 0)
         {
             Debug.Log($"No jokes in topic {topic}");
@@ -69,16 +73,32 @@ public class PlayerJoker : MonoBehaviour
             return;
         }
         
+        _animator.SetTrigger("tellingJoke");
+        
+        _audioSource.clip = _jokeTellingClip;
+        _audioSource.time = 0.5f;
+        _audioSource.Play();
+        
+        
         JokeInTopicCountDict[topic]--;
         RemoveJokeFromTopic(topic);
         if(TryJokeLanding(topic, joinedHuddle.conversationTopic))
         {
             _playerAnxietyController.DecreaseAnxiety();
+            DOVirtual.DelayedCall(1f, () =>
+            {
+                _audioSource.PlayOneShot(_jokeLandingClip);
+            });
+            
             Debug.Log($"Joke landed");
         }
         else
         {
             _playerAnxietyController.IncreaseAnxiety();
+            DOVirtual.DelayedCall(1f, () =>
+            {
+                _audioSource.PlayOneShot(_jokeFailingClip);
+            });
             Debug.Log($"Joke failed");
         }
     }
